@@ -1,0 +1,26 @@
+Réservez votre place
+Inscription à l'événement
+Remplissez le formulaire — votre billet numéroté s'affiche juste après.
+
+{% csrf_token %}
+Nom complet
+{{ form.nom }} {{ form.nom.errors }}
+Email
+{{ form.email }} {{ form.email.errors }}
+Téléphone
+{{ form.telephone }} {{ form.telephone.errors }}
+Catégorie
+{{ form.categorie }} {{ form.categorie.errors }}
+Ville
+{{ form.ville }} {{ form.ville.errors }}
+Référence de paiement Mobile Money (si requis)
+{{ form.reference_paiement }}
+Laissez vide si l'événement est gratuit ou si le paiement se fait sur place.
+
+Motivation / message (optionnel)
+{{ form.motivation }}
+Générer mon billet
+N° de place
+—
+attribué à la validation
+Vos données sont enregistrées de façon sécurisée dans la base de l'événement.
